@@ -1,0 +1,122 @@
+/* --------------------------
+  Base Styles
+--------------------------- */
+
+@import url("http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #797e83;
+  font-size: 16px;
+	margin: 0;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.nav a {
+  color: #656a6e;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.container {
+	width: 90%;
+	margin: auto;
+}
+
+/* --------------------------
+  Media Queries
+--------------------------- */
+
+@media (min-width: 769px) {
+	.main-content {
+		margin-top: 4em;
+	}
+	p {
+		-webkit-column-count: 2;
+		-webkit-column-gap: 2.5em;
+
+		-moz-column-count: 2;
+		-moz-column-gap: 2.5em;
+
+		column-count: 2;
+		column-gap: 2.5em;
+	}
+}
+
+@media (min-width: 1200px) {
+	.container {
+		width: 1080px;
+	}
+}
+
+/* --------------------------
+  Main Styles
+--------------------------- */
+.main-header,
+.nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav a {
+  display: block;
+  color: #797e83;
+  font-size: 1.125em;
+  font-weight: 300;
+  text-align: center;
+  padding: 0.4em;
+  border-bottom: 1px solid #ebecec;
+}
+
+.logo {
+  width: 120px;
+  align-self: center;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.main-content {
+  margin-top: 3em;
+}
+
+.nav a:hover {
+  color: #0b0b0b;
+  border-bottom-color: #52bab3;
+}
+
+/* --------------------------
+  Media Queries
+--------------------------- */
+
+@media (min-width: 769px) {
+
+    .logo {
+      width: 160px;
+      margin-right: auto;
+    }
+
+    .nav,
+    .main-header {
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .nav li {
+      padding: 1em;
+    }
+
+    .main-header {
+      height: 200px;
+    }
+}
