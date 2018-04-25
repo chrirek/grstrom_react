@@ -5,8 +5,8 @@ import MainContent from "./MainContent";
 
 class App extends Component {
 
-  constructor (props) {
-    super(props)
+  constructor () {
+    super()
 
     //Bind the this context to the handler function
     this.onClickEvent = this.onClickEvent.bind(this);
